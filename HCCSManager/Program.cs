@@ -1,4 +1,7 @@
 ﻿using DataModel;
+using WdConnect;
+
+
 
 namespace HCCSManager
 {
@@ -6,15 +9,9 @@ namespace HCCSManager
    {
       static void Main()
       {
-         var dpt = new Department();
-         dpt.DepartmentName = "New Department";
-         dpt.WorkdayReferenceId = "ksk82ks8";
+         var wdc = new WorkdayConnection();
 
-         using (var context = new HccsContext())
-         {
-            context.Departments.Add(dpt);
-            context.SaveChanges();
-         }
+      }
       }
    }
-}
+
