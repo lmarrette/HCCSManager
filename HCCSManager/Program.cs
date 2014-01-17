@@ -27,9 +27,9 @@ namespace HCCSManager
                st.UserId = t.userName;
                st.FirstName = t.firstName;
                st.LastName = t.lastName;
-               st.Department.WorkdayReferenceId = t.department.ID[0].Value;
+               st.Department = t.department.ID[0].Value;
                st.HireDate = t.hireDate;
-               st.ManagementLevel = t.ManagementLevel.Descriptor;
+               st.ManagementLevel = t.DeptID;
                st.WorkEmail = t.workEmail11;
                st.WorkdayId = t.EmployeeID;
                using (var context = new HccsContext())
@@ -39,10 +39,10 @@ namespace HCCSManager
                }
             }
          }
-         catch (Exception)
+         catch (Exception e)
          {
+            Console.WriteLine("Caught exception " + e);
             
-            throw;
          }
       }
       }

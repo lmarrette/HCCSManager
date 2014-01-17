@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201401152213199_NullableDates.Designer.cs">
       <DependentUpon>201401152213199_NullableDates.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201401172042291_UpdateStaging.cs" />
+    <Compile Include="Migrations\201401172042291_UpdateStaging.Designer.cs">
+      <DependentUpon>201401172042291_UpdateStaging.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201401152213199_NullableDates.resx">
       <DependentUpon>201401152213199_NullableDates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201401172042291_UpdateStaging.resx">
+      <DependentUpon>201401172042291_UpdateStaging.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -14,7 +14,7 @@ namespace DataModel
       public string LastName { get; set; }
       public string WorkEmail { get; set; }
       public DateTime HireDate { get; set; }
-      public Department Department { get; set; }
+      public string Department { get; set; }
       public string ManagementLevel { get; set; }
    }
 }
