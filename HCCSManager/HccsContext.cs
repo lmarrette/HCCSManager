@@ -12,5 +12,6 @@ namespace HCCSManager
       public DbSet<NewHire> NewHires { get; set; }
       public DbSet<Termination> Terminations { get; set; }
       public DbSet<UserIdChange> UserIdChanges { get; set; }
+      public DbSet<Staging> Stagings { get; set; }
    }
 }
